@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Brutaflor Galeria: Arte, Gastronomia e Cultura em Fortaleza</title>
+
+    <meta
+      name="description"
+      content="Descubra o Brutaflor, um espaço único em Fortaleza que une galeria de arte popular, restaurante de alta gastronomia e o melhor da música brasileira. Uma experiência cultural e de sabor inesquecível."
+    />
+    <meta
+      name="keywords"
+      content="restaurante em fortaleza, galeria de arte, arte popular brasileira, gastronomia, música ao vivo, cazuza, elis regina, brutaflor"
+    />
+    <meta name="author" content="Brutaflor Galeria" />
+    <link rel="canonical" href="https://www.seusite.com.br" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="src/assets/logo/Logo-brutaflor1.png"
+    />
+    <link rel="apple-touch-icon" href="src/assets/logo/Logo-brutaflor1.png" />
+    <meta
+      property="og:title"
+      content="Brutaflor Galeria: Arte, Gastronomia e Cultura em Fortaleza"
+    />
+    <meta
+      property="og:description"
+      content="Um espaço único que une galeria de arte, restaurante e o melhor da música brasileira."
+    />
+    <meta
+      property="og:image"
+      content="https://www.seusite.com.br/src/assets/obras/obra4.png"
+    />
+    <meta property="og:url" content="https://www.seusite.com.br" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Brutaflor Galeria: Arte, Gastronomia e Cultura em Fortaleza"
+    />
+    <meta
+      name="twitter:description"
+      content="Um espaço único que une galeria de arte, restaurante e o melhor da música brasileira."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.seusite.com.br/src/assets/obras/obra4.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-gray-800">
+    <header
+      class="bg-white/70 backdrop-filter backdrop-blur-lg shadow-sm py-4 px-6 md:px-12 fixed w-full z-50 border-b border-gray-200/50"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <a
+          href="#hero"
+          class="flex items-center gap-3 text-2xl font-bold text-orange-500 tracking-tight"
+        >
+          <img
+            src="src/assets/logo/Logo-brutaflor1.png"
+            alt="Logo Brutaflor"
+            class="h-24 w-24 rounded-md shadow-lg"
+          />
+          <span>Brutaflor Galeria</span>
+        </a>
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#hero"
+            class="text-gray-600 hover:text-purple-700 transition duration-300 font-medium"
+            >Início</a
+          >
+          <a
+            href="#galeria"
+            class="text-gray-600 hover:text-purple-700 transition duration-300 font-medium"
+            >Galeria</a
+          >
+          <a
+            href="#colecao-brutaflor"
+            class="text-gray-600 hover:text-purple-700 transition duration-300 font-medium"
+            >Coleção</a
+          >
+          <a
+            href="#about"
+            class="text-gray-600 hover:text-purple-700 transition duration-300 font-medium"
+            >Sobre</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-600 hover:text-purple-700 transition duration-300 font-medium"
+            >Contato</a
+          >
+        </nav>
+        <a
+          href="https://linktr.ee/brutaflor806"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden md:inline-block bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-purple-800 transform hover:scale-105 transition duration-300 ease-in-out"
+        >
+          Menu & Reservas
+        </a>
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-600 hover:text-purple-700 focus:outline-none"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+        <a
+          href="#hero"
+          class="block text-gray-600 hover:text-purple-700 transition duration-300 font-medium px-4 py-2 rounded-md"
+          >Início</a
+        >
+        <a
+          href="#galeria"
+          class="block text-gray-600 hover:text-purple-700 transition duration-300 font-medium px-4 py-2 rounded-md"
+          >Galeria</a
+        >
+        <a
+          href="#colecao-brutaflor"
+          class="block text-gray-600 hover:text-purple-700 transition duration-300 font-medium px-4 py-2 rounded-md"
+          >Coleção</a
+        >
+        <a
+          href="#about"
+          class="block text-gray-600 hover:text-purple-700 transition duration-300 font-medium px-4 py-2 rounded-md"
+          >Sobre</a
+        >
+        <a
+          href="#contact"
+          class="block text-gray-600 hover:text-purple-700 transition duration-300 font-medium px-4 py-2 rounded-md"
+          >Contato</a
+        >
+        <a
+          href="https://linktr.ee/brutaflor806"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block text-purple-700 bg-purple-100 font-bold transition duration-300 px-4 py-3 rounded-md text-center"
+          >Menu & Reservas</a
+        >
+      </div>
+    </header>
+
+    <section
+      id="hero"
+      class="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center"
+      style="background-image: url('src/assets/images/hero-background.png')"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/50 to-black/20"
+      ></div>
+      <div class="relative container mx-auto px-6 py-24 max-w-4xl z-10">
+        <h1
+          class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 fade-in-up"
+          style="
+            animation-delay: 0.1s;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+          "
+        >
+          Poesia em cada Detalhe.
+        </h1>
+        <p
+          class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto fade-in-up"
+          style="
+            animation-delay: 0.3s;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+          "
+        >
+          Explore a alma brasileira através da nossa galeria de arte, mergulhe
+          nos sabores da nossa cozinha e sinta a vibração da nossa música.
+        </p>
+        <a
+          href="#galeria"
+          class="inline-block bg-white text-purple-800 font-bold py-4 px-10 rounded-full shadow-2xl hover:bg-gray-100 transform hover:scale-105 transition duration-300 ease-in-out fade-in-up"
+          style="animation-delay: 0.5s"
+        >
+          Explorar a Galeria
+        </a>
+      </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto p-6 pt-20">
+      <section class="mb-12 p-8 rounded-2xl card-liquid-glass">
+        <h2 class="text-3xl font-bold text-purple-800 mb-6 text-center">
+          Encontre sua Obra Perfeita
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <label
+              for="search-input"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Buscar por Título ou Artista:</label
+            >
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Ex: J. Borges"
+              class="shadow-sm appearance-none border border-gray-300/50 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white/80"
+            />
+          </div>
+          <div>
+            <label
+              for="artist-filter"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Filtrar por Artista:</label
+            >
+            <select
+              id="artist-filter"
+              class="shadow-sm appearance-none border border-gray-300/50 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white/80"
+            >
+              <option value="">Todos os Artistas</option>
+            </select>
+          </div>
+          <div>
+            <label
+              for="technique-filter"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Filtrar por Técnica:</label
+            >
+            <select
+              id="technique-filter"
+              class="shadow-sm appearance-none border border-gray-300/50 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white/80"
+            >
+              <option value="">Todas as Técnicas</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="py-10">
+        <h2 class="text-4xl font-extrabold text-center text-purple-800 mb-12">
+          Nossa Coleção de Arte
+        </h2>
+        <div
+          id="gallery-container"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        ></div>
+        <div id="loading-indicator" class="text-center py-10 hidden">
+          <div
+            class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-purple-500 mx-auto"
+          ></div>
+          <p class="mt-4 text-gray-600">Carregando obras...</p>
+        </div>
+        <div id="no-results" class="text-center py-10 hidden">
+          <p class="text-xl text-gray-600">
+            Nenhuma obra encontrada. Tente um novo filtro.
+          </p>
+          <button
+            id="clear-filters-button"
+            class="mt-6 bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition duration-300 shadow-md"
+          >
+            Limpar Filtros
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="colecao-brutaflor"
+        class="my-16 py-16 bg-purple-50/50 rounded-2xl card-liquid-glass"
+      >
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-4xl font-extrabold text-purple-800 mb-4">
+            Coleção Brutaflor: Nossas Releituras
+          </h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+            No coração do Brutaflor, cada detalhe é pensado para provocar emoção
+            e fascínio. Esta série de obras exclusivas transforma referências
+            icônicas da arte brasileira em experiências visuais sofisticadas,
+            onde gastronomia, música e arquitetura se unem com autenticidade. Do
+            traço surreal de Abaporu às curvas de Niemeyer, passando pelas vozes
+            eternas de Bethânia, Elis Regina e Cazuza, cada imagem carrega a
+            alma do Brasil com frescor, elegância e potência cultural. Aqui, o
+            espaço não é apenas cenário — é personagem. Um convite à
+            contemplação, à descoberta e à celebração do que somos: intensos,
+            criativos e apaixonados por experiências que emocionam.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
+            >
+              <img
+                src="src/assets/obras/obra1.png"
+                alt="Homenagem a Elis e Cazuza no espaço Brutaflor."
+                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+              >
+                <div class="text-white">
+                  <h3 class="text-2xl font-bold">Mesa em Voz Alta</h3>
+                  <p class="text-sm">
+                    Tributo a Elis Regina e Cazuza — duas almas intensas
+                    eternizadas no ambiente do restaurante através música,
+                    atitude e emoção.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
+            >
+              <img
+                src="src/assets/obras/obra2.png"
+                alt="Arte, DJs e vitrola em ambiente cultural vibrante."
+                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+              >
+                <div class="text-white">
+                  <h3 class="text-2xl font-bold">Brasil em Vinil e Cor</h3>
+                  <p class="text-sm">
+                    A fusão de arte brasileira com música e gastronomia — DJs,
+                    vitrolas e obras reinventadas se encontram num espaço que
+                    respira brasilidade.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
+            >
+              <img
+                src="src/assets/obras/obra3.png"
+                alt="Supresa em ambiente de restaurante com brasilidade."
+                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+              >
+                <div class="text-white">
+                  <h3 class="text-2xl font-bold">Surrealismo à Mesa</h3>
+                  <p class="text-sm">
+                    Releitura sensorial  que une surrealismo e experiência
+                    gastronômica brasileira, provocando surpresa e admiração..
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
+            >
+              <img
+                src="src/assets/obras/obra4.png"
+                alt="Pessoas admirando arte no espaço Brutaflor."
+                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+              >
+                <div class="text-white">
+                  <h3 class="text-2xl font-bold">Olhar Revelado</h3>
+                  <p class="text-sm">
+                    Visitantes imersos nas obras inspiradas no Abaporu e outras
+                    joias visuais, em um ambiente que desperta histórias e
+                    emoções únicas
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
+            >
+              <img
+                src="src/assets/obras/obras5.png"
+                alt="Espaço moderno com curvas e charme boêmio."
+                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+              >
+                <div class="text-white">
+                  <h3 class="text-2xl font-bold">Boemia em Concreto</h3>
+                  <p class="text-sm">
+                    Curvas inspiradas em Oscar Niemeyer criam um espaço de
+                    elegância boêmia, onde arquitetura e sensibilidade se
+                    encontram
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
+            >
+              <img
+                src="src/assets/obras/obra6.png"
+                alt="Vitrola e ambiente poético inspirado em Bethânia."
+                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+              >
+                <div class="text-white">
+                  <h3 class="text-2xl font-bold">Versos de Bethânia</h3>
+                  <p class="text-sm">
+                    Um cenário sofisticado onde a vitrola ecoa a poesia e
+                    presença de Maria Bethânia — emoção, música e tradição em
+                    harmonia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12">
+            <a
+              href="#loja"
+              class="inline-block bg-purple-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-purple-800 transform hover:scale-105 transition duration-300 ease-in-out"
+            >
+              Leve essa Arte para Casa (Ver Produtos)
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="musica"
+        class="my-16 py-20 px-6 rounded-2xl bg-gradient-to-b from-purple-50/50 to-orange-50/50"
+      >
+        <div class="container mx-auto max-w-5xl">
+          <div class="text-center">
+            <h2 class="text-4xl font-extrabold text-purple-800 mb-4">
+              A Trilha Sonora da Nossa Casa
+            </h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+              Mais que fundo musical, nossa curadoria é o coração pulsante do
+              Brutaflor. Uma seleção de clássicos e novidades que celebram a
+              riqueza da música brasileira.
+            </p>
+          </div>
+
+          <div
+            class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          >
+            <div class="text-center md:text-left">
+              <img
+                src="src/assets/logo/elis.png"
+                alt="Nossa homenagem a Elis Regina"
+                class="rounded-2xl shadow-xl mx-auto md:mx-0 mb-6 w-full max-w-sm"
+              />
+              <h3 class="text-2xl font-bold text-orange-600">
+                Elis Regina: A Pimentinha
+              </h3>
+              <p class="mt-2 text-gray-600">
+                A força, a paixão e a intensidade de uma das maiores vozes do
+                Brasil ecoam em nosso ambiente, inspirando pratos e conversas.
+              </p>
+            </div>
+
+            <div class="text-center md:text-right">
+              <img
+                src="src/assets/logo/cazuzaimage.png"
+                alt="Nossa homenagem a Cazuza"
+                class="rounded-2xl shadow-xl mx-auto md:ml-auto md:mr-0 mb-6 w-full max-w-sm"
+              />
+              <h3 class="text-2xl font-bold text-purple-800">
+                Cazuza: O Poeta Exagerado
+              </h3>
+              <p class="mt-2 text-gray-600">
+                Celebramos a urgência, a poesia e a alma boêmia de Cazuza, que
+                representa a liberdade criativa que tanto valorizamos.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-20 max-w-3xl mx-auto">
+            <div
+              class="bg-white/60 backdrop-blur-sm rounded-2xl shadow-lg p-8 border border-white/50"
+            >
+              <div
+                class="flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left"
+              >
+                <div class="flex items-center gap-4">
+                  <svg
+                    class="w-16 h-16 text-green-500 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.183 14.225a.75.75 0 01-1.06 0l-2.618-2.617a.75.75 0 010-1.061l2.618-2.617a.75.75 0 111.06 1.06L14.06 12l2.122 2.122a.75.75 0 010 1.103zm-6.225-7.05a.75.75 0 011.06 0l2.618 2.617a.75.75 0 010 1.061L9.018 16.2a.75.75 0 11-1.06-1.06L10.08 12 7.958 9.878a.75.75 0 010-1.103z"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">
+                      Nossa Trilha Sonora no Spotify
+                    </h3>
+                    <p class="text-gray-600 mt-1">
+                      Leve a vibe do Brutaflor com você. Siga nossa playlist
+                      oficial.
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-green-600 transform hover:scale-105 transition duration-300 ease-in-out whitespace-nowrap"
+                >
+                  Ouvir no Spotify
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="avaliacoes" class="my-16 py-16">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-extrabold text-purple-800 mb-12 text-center">
+            O Que Dizem Sobre Nós
+          </h2>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="w-full">
+              <img
+                src="src/assets/logo/restaurante-ambiente.jpg"
+                alt="Ambiente acolhedor do restaurante Brutaflor"
+                class="w-full h-auto object-cover rounded-2xl shadow-2xl"
+              />
+            </div>
+            <div class="space-y-8">
+              <div class="p-6 rounded-2xl card-liquid-glass text-left">
+                <svg
+                  class="w-8 h-8 text-purple-200 mb-4"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 18 14"
+                >
+                  <path
+                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                  />
+                </svg>
+                <p class="text-gray-700 mb-4">
+                  "Um oásis cultural em Fortaleza. A comida é divina, a arte te
+                  transporta e o ambiente é simplesmente mágico. Volto sempre!"
+                </p>
+                <footer class="font-bold text-purple-800 text-right">
+                  — Mariana L.
+                </footer>
+              </div>
+              <div class="p-6 rounded-2xl card-liquid-glass text-left">
+                <svg
+                  class="w-8 h-8 text-purple-200 mb-4"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 18 14"
+                >
+                  <path
+                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                  />
+                </svg>
+                <p class="text-gray-700 mb-4">
+                  "Comprei uma xilogravura incrível e aproveitei para provar o
+                  melhor baião da cidade. Atendimento impecável. Recomendo de
+                  olhos fechados."
+                </p>
+                <footer class="font-bold text-purple-800 text-right">
+                  — Carlos F.
+                </footer>
+              </div>
+              <div class="p-6 rounded-2xl card-liquid-glass text-left">
+                <svg
+                  class="w-8 h-8 text-purple-200 mb-4"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 18 14"
+                >
+                  <path
+                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                  />
+                </svg>
+                <p class="text-gray-700 mb-4">
+                  "O lugar perfeito para um date, um encontro com amigos ou para
+                  simplesmente apreciar a vida. Brutaflor é uma experiência
+                  completa."
+                </p>
+                <footer class="font-bold text-purple-800 text-right">
+                  — Julia S.
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="mt-16 text-center">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-500 transform hover:scale-105 transition duration-300 ease-in-out"
+            >
+              ⭐ Deixe sua Avaliação no Google
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="my-16 py-16">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-purple-800">
+              Nossa Essência: Cultura, Sabor e Paixão
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+              <p class="text-lg text-gray-700 leading-relaxed">
+                O Brutaflor nasceu de um sonho: criar um espaço que fosse mais
+                do que um restaurante, um verdadeiro ponto de encontro para os
+                amantes da cultura brasileira. Com mais de 31 mil seguidores,
+                nos tornamos um refúgio onde a gastronomia autêntica, a arte
+                popular e a boa música se encontram para criar momentos
+                inesquecíveis.
+              </p>
+              <div class="space-y-4 pt-4">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 w-8 h-8 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg text-purple-800">
+                      Arte e Cultura
+                    </h4>
+                    <p class="text-gray-600">
+                      Nossas paredes são galerias vivas, celebrando a riqueza e
+                      a diversidade dos artistas brasileiros.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 w-8 h-8 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg text-purple-800">
+                      Gastronomia com Alma
+                    </h4>
+                    <p class="text-gray-600">
+                      Pratos que contam histórias, feitos com ingredientes
+                      frescos e uma paixão que se sente a cada garfada.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 w-8 h-8 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg text-purple-800">
+                      Atmosfera Acolhedora
+                    </h4>
+                    <p class="text-gray-600">
+                      Um ambiente pensado para conectar pessoas, inspirar
+                      conversas e criar memórias felizes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-6">
+                <a
+                  href="https://www.instagram.com/brutaflorrestaurante/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block bg-pink-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-pink-600 transform hover:scale-105 transition duration-300 ease-in-out"
+                >
+                  Acompanhe no Instagram
+                </a>
+              </div>
+            </div>
+            <div class="w-full">
+              <img
+                src="src/assets/logo/ambiente-brutaflor.jpeg"
+                alt="A equipe e fundadores do Brutaflor"
+                class="w-full h-auto object-cover rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="my-16 py-16 rounded-2xl card-liquid-glass">
+        <div class="container mx-auto px-6 max-w-2xl">
+          <h2 class="text-4xl font-extrabold text-center text-purple-800 mb-8">
+            Fale Conosco
+          </h2>
+          <p class="text-lg text-center text-gray-700 mb-10">
+            Interessado em uma obra, quer expor seu trabalho ou tem alguma
+            dúvida? Preencha o formulário e nossa equipe entrará em contato.
+          </p>
+          <form
+            class="bg-white/50 p-8 rounded-xl shadow-inner border border-gray-200/50"
+          >
+            <div class="mb-6">
+              <label
+                for="contact-name"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Nome:</label
+              >
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                class="shadow-sm border border-gray-300/50 rounded-lg w-full py-3 px-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white/80"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="contact-email"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                class="shadow-sm border border-gray-300/50 rounded-lg w-full py-3 px-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white/80"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="contact-message"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Mensagem:</label
+              >
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="6"
+                class="shadow-sm border border-gray-300/50 rounded-lg w-full py-3 px-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white/80"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="bg-purple-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-purple-800 transform hover:scale-105 transition duration-300 ease-in-out"
+              >
+                Enviar Mensagem
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="relative text-center text-white py-16 bg-gray-900 bg-cover bg-center"
+      style="background-image: url('src/assets/images/footer-background.png')"
+    >
+      <div class="absolute inset-0 bg-black/70"></div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6">
+        <p class="text-2xl font-semibold mb-6">
+          🧡 Poesia através do sabor, da música e da arte.
+        </p>
+        <div class="my-8">
+          <a
+            href="https://linktr.ee/brutaflor806"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-white text-purple-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transform hover:scale-105 transition duration-300 ease-in-out"
+          >
+            Ver Menu & Fazer Reserva
+          </a>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left my-10 border-t border-b border-gray-600 py-8"
+        >
+          <div>
+            <h4 class="font-bold text-lg mb-2">Nosso Endereço</h4>
+            <p class="text-gray-300">
+              Rua Antonio Augusto, 806 - Aldeota<br />Fortaleza, Ceará,
+              60110-370
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-2">Horário de Funcionamento</h4>
+            <ul class="text-gray-300">
+              <li><strong>Qua & Qui:</strong> 18h às 23h</li>
+              <li><strong>Sex:</strong> 18h às 00h</li>
+              <li><strong>Sáb:</strong> 12h às 00h</li>
+              <li><strong>Dom:</strong> 12h às 22h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center space-x-6 mb-6">
+          <a
+            href="https://www.instagram.com/brutaflorrestaurante/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-300 hover:text-white transition duration-300"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.01 3.797.048 1.19.044 1.95.24 2.65.57.7.33 1.28.77 1.9 1.39.62.62 1.06 1.2 1.39 1.9.33.7.526 1.46.57 2.65.048 1.013.048 1.367.048 3.797s-.002 2.784-.048 3.797c-.044 1.19-.24 1.95-.57 2.65-.33.7-.77 1.28-1.39 1.9-.62.62-1.2 1.06-1.9 1.39-.7.33-1.46.526-2.65.57-1.013.048-1.367.048-3.797.048s-2.784-.002-3.797-.048c-1.19-.044-1.95-.24-2.65-.57-.7-.33-1.28-.77-1.9-1.39-.62-.62-1.06-1.2-1.39-1.9-.33-.7-.526-1.46-.57-2.65C2.012 15.097 2 14.743 2 12.315s.002-2.784.048-3.797c.044-1.19.24-1.95.57-2.65.33-.7.77-1.28 1.39-1.9.62-.62 1.2-1.06 1.9-1.39.7-.33 1.46-.526 2.65-.57C9.257 2.012 9.61 2 12 2h.315zM12 0C9.327 0 8.963.01 7.915.051 4.26.214 2.214 2.26 2.051 5.915 2.01 6.963 2 7.327 2 10s.01 3.037.051 4.085c.163 3.655 2.21 5.701 5.864 5.864 1.048.041 1.412.051 4.085.051s3.037-.01 4.085-.051c3.655-.163 5.701-2.21 5.864-5.864.041-1.048.051-1.412.051-4.085s-.01-3.037-.051-4.085C21.786 2.26 19.74.214 16.085.051 15.037.01 14.673 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="text-sm text-gray-400">
+          &copy; 2025 Brutaflor Galeria. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <div id="artwork-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="md:flex md:space-x-8">
+          <div class="md:w-1/2 mb-6 md:mb-0">
+            <img
+              id="modal-image"
+              src=""
+              alt="Obra de Arte"
+              class="w-full h-auto object-cover rounded-lg shadow-lg mb-4"
+            />
+            <p class="text-sm text-gray-500 text-center">
+              Imagem meramente ilustrativa.
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <h3
+              id="modal-title"
+              class="text-3xl font-bold text-purple-800 mb-2"
+            ></h3>
+            <p
+              id="modal-artist-technique"
+              class="text-xl text-gray-700 mb-2"
+            ></p>
+            <p id="modal-size-value" class="text-lg text-gray-600 mb-4"></p>
+            <p
+              id="modal-description"
+              class="text-gray-800 text-base leading-relaxed mb-6"
+            ></p>
+            <div
+              id="modal-artist-bio"
+              class="bg-purple-50 p-4 rounded-lg text-sm text-gray-700 mb-6 hidden"
+            ></div>
+            <a
+              id="whatsapp-link"
+              href="#"
+              target="_blank"
+              class="inline-block w-full bg-orange-500 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition duration-300 ease-in-out text-center"
+            >
+              🧡 Quero esta obra via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/js/data.js"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+/* Global CSS Styles */
+      body {
+        font-family: "Inter", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        background: #f0f4f8; /* Fundo base sólido para melhor performance */
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        animation: fadeInOverlay 0.3s ease-out;
+      }
+      @keyframes fadeInOverlay {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .modal-content {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+        width: 95%;
+        max-width: 800px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        position: relative;
+        text-align: left;
+        animation: fadeInScale 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        max-height: 90vh;
+        overflow-y: auto;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      @keyframes fadeInScale {
+        from {
+          opacity: 0;
+          transform: scale(0.95) translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+      .close-button {
+        color: #cf6604;
+        position: absolute;
+        top: 1.2rem;
+        right: 1.8rem;
+        font-size: 2.8rem;
+        font-weight: 300;
+        cursor: pointer;
+        transition: color 0.3s ease, transform 0.2s ease;
+      }
+      .close-button:hover,
+      .close-button:focus {
+        color: #780296;
+        transform: rotate(90deg);
+      }
+      .card-liquid-glass {
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+      .card-liquid-glass:hover {
+        box-shadow: 0 12px 40px rgba(31, 38, 135, 0.15);
+        transform: translateY(-5px);
+      }
+      .fade-in-up {
+        animation: fadeInUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+  
